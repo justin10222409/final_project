@@ -1,0 +1,120 @@
+/* Google Fonts loaded in HTML: 'Lato' for body, 'Playfair Display' for headings */
+:root{
+  --bg: #0b1020;
+  --panel: #121a33;
+  --accent: #34d399;   /* outdoorsy green */
+  --accent-2: #86efac; /* light green */
+  --text: #e5e7eb;
+  --muted: #9ca3af;
+  --border: #243158;
+  --radius: 1.25rem;
+  --maxw: 1100px;
+}
+
+*{ box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body{
+  margin:0;
+  font-family: "Lato", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  color: var(--text);
+  background:
+     radial-gradient(1200px 500px at 10% -10%, #1f2a56 0%, transparent 60%),
+     radial-gradient(1000px 600px at 90% -20%, #0b173a 0%, transparent 60%),
+     var(--bg);
+  line-height: 1.6;
+}
+
+a{ color: var(--accent); text-decoration: none; }
+a:hover{ text-decoration: underline; }
+
+.container{ max-width: var(--maxw); margin: 0 auto; padding: 1.2rem; }
+
+/* Header / Nav */
+.site-header{
+  border-bottom: 1px solid var(--border);
+  backdrop-filter: blur(6px);
+  position: sticky; top:0; z-index: 20;
+  background: linear-gradient(0deg, rgba(11,16,32,0.65), rgba(11,16,32,0.65));
+}
+.nav{ display:flex; align-items:center; justify-content:space-between; gap: 1rem; }
+.brand{ display:flex; align-items:center; gap:.7rem; font-weight:800; }
+.brand img{ width:28px; height:28px; }
+.nav a{ padding:.5rem .8rem; border-radius:.6rem; }
+.nav a.active, .nav a:hover{ background: #0f1835; }
+
+/* Hero */
+.hero{
+  display:grid; grid-template-columns: 1.2fr 1fr; gap: 2rem;
+  padding: 2rem 0 1rem;
+}
+.hero .card{
+  padding: 2rem; border:1px solid var(--border); background: var(--panel);
+  border-radius: var(--radius); box-shadow: 0 10px 30px rgb(0 0 0 / .25);
+}
+.hero h1{
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height:1.15; margin:.2rem 0 1rem;
+}
+.badge{ display:inline-block; padding:.25rem .6rem; border: 1px solid var(--border); border-radius:999px; color:var(--muted); }
+
+/* Utility cards / grids */
+.grid-3{ display:grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+.grid-2{ display:grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.card{ padding:1rem; border:1px solid var(--border); border-radius: var(--radius); background: linear-gradient(180deg, #0f1835, #0d1530); }
+.card h3{ margin-top:.2rem; font-family:"Playfair Display", Georgia, serif; }
+
+/* Lists demo */
+ul.check{ list-style: none; padding-left: 1rem; }
+ul.check li{ margin:.4rem 0; position: relative; padding-left: 1.4rem; }
+ul.check li::before{ content: "✓"; position: absolute; left:0; top:0; color: var(--accent-2); font-weight: 800; }
+
+/* Tables demo */
+.table{ width:100%; border-collapse: collapse; margin:.5rem 0 1rem; }
+.table th, .table td{ border:1px solid var(--border); padding:.6rem .8rem; text-align:left; }
+.table th{ background:#0b1531; }
+
+/* Images */
+.img-wrap{ overflow:hidden; border-radius: calc(var(--radius) - .25rem); border:1px solid var(--border); }
+.img-wrap img{ display:block; width:100%; height:auto; }
+
+/* Forms */
+input, textarea, select, button{ font: inherit; color: var(--text); }
+.input{
+  width:100%; padding:.7rem .9rem; background:#0c1430; border:1px solid var(--border);
+  border-radius:.8rem; outline: none;
+}
+.input:focus{ border-color: var(--accent); box-shadow: 0 0 0 3px rgb(52 211 153 / .15); }
+.button{
+  display:inline-block; padding:.7rem 1rem; border-radius:.9rem; border:1px solid var(--border);
+  background: linear-gradient(180deg, #1a2350, #151d42);
+}
+.button:hover{ filter: brightness(1.05); }
+
+/* Footer */
+footer{
+  border-top:1px solid var(--border);
+  color: var(--muted);
+  padding: 1rem 0 2rem;
+  margin-top: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 900px){
+  .hero{ grid-template-columns: 1fr; }
+  .grid-3{ grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 640px){
+  .grid-3, .grid-2{ grid-template-columns: 1fr; }
+  .nav{ flex-wrap: wrap; }
+  .nav a{ padding:.5rem .6rem; }
+}
+
+/* Demonstrations of margins, padding, borders */
+.demo-box{
+  margin: 1rem 0;
+  padding: 1rem;
+  border: 2px dashed var(--accent-2);
+  background: linear-gradient(180deg, rgba(134,239,172,.08), transparent);
+}

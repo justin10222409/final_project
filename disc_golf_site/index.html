@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Disc Golf Guide</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <img src="images/favicon.ico" alt="Disc Golf icon" />
+        <span>Disc Golf Guide</span>
+      </a>
+      <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="blog.html">Tips</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="card">
+        <span class="badge">Start Here</span>
+        <h1>Disc Golf: Learn the Basics, Improve Your Throws</h1>
+        <p>New to disc golf or leveling up? This site covers gear, technique, etiquette, and course strategy—with a clean, responsive layout you can explore on any device.</p>
+        <div class="demo-box">
+          <strong>What you'll learn:</strong>
+          <ul class="check">
+            <li>Choosing drivers, midranges, and putters</li>
+            <li>Backhand vs. forehand mechanics</li>
+            <li>Rules, etiquette, and scoring (par, birdie, bogey)</li>
+          </ul>
+        </div>
+        <a class="button" href="about.html">Get to Know the Game →</a>
+      </div>
+      <div class="img-wrap">
+        <img src="images/disc_golf.jpg" alt="Disc flying toward basket" />
+      </div>
+    </section>
+
+    <section style="margin-top:1rem;">
+      <div class="grid-3">
+        <div class="card">
+          <h3>The Gear</h3>
+          <p>Carry at least a <strong>putter</strong>, a <strong>midrange</strong>, and a <strong>driver</strong>. Stability (turn/fade) and plastic affect flight and grip.</p>
+          <ul class="check">
+            <li>Comfortable putter for confidence</li>
+            <li>Neutral midrange to learn angles</li>
+            <li>Control driver before distance</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Course Strategy</h3>
+          <p>Play for position. On tight fairways, a safe placement often beats risky distance. Learn to scramble smart.</p>
+          <table class="table">
+            <tr><th>Hole Type</th><th>Plan</th></tr>
+            <tr><td>Open (Windy)</td><td>Stable discs, lower lines</td></tr>
+            <tr><td>Wooded</td><td>Neutral disc, smooth release</td></tr>
+            <tr><td>Uphill/Downhill</td><td>Adjust power &amp; nose angle</td></tr>
+          </table>
+        </div>
+        <div class="card">
+          <h3>Etiquette</h3>
+          <p>Let faster groups play through, mind your foot faults, and celebrate others’ great shots. Respect the course.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© <span id="year"></span> Disc Golf Guide — Justin Manis.</p>
+    </div>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  </footer>
+</body>
+</html>

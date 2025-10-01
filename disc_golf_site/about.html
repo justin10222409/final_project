@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About • Disc Golf Guide</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <img src="images/favicon.ico" alt="Disc Golf icon" />
+        <span>Disc Golf Guide</span>
+      </a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html" class="active">About</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="blog.html">Tips</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>About Disc Golf</h1>
+    <p>Disc golf is played like traditional golf, but with flying discs and metal baskets. Each hole begins at a tee and ends when your disc rests in the basket or chains.</p>
+
+    <div class="grid-2" style="margin-top:1rem;">
+      <div class="card">
+        <h3>How to Play</h3>
+        <ul class="check">
+          <li>Tee off from the designated pad</li>
+          <li>Subsequent throws from where the disc landed</li>
+          <li>Least throws to finish wins</li>
+        </ul>
+        <p>Scoring quick guide: <em>eagle</em> (−2), <em>birdie</em> (−1), <em>par</em> (0), <em>bogey</em> (+1).</p>
+      </div>
+      <div class="img-wrap"><img src="images/player_putting.jpg" alt="Player lining up a putt"></div>
+    </div>
+
+    <h2 style="margin-top:1.5rem;">Discs &amp; Stability</h2>
+    <div class="grid-3">
+      <div class="card"><h3>Putter</h3><p>Slow, straight, forgiving—great for approaches and the chains.</p></div>
+      <div class="card"><h3>Midrange</h3><p>Versatile for controlled shots; learn angles and nose control here.</p></div>
+      <div class="card"><h3>Driver</h3><p>Fast but unforgiving. Start with control drivers before max-distance molds.</p></div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© <span id="year"></span> Disc Golf Guide — Justin Manis.</p>
+    </div>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  </footer>
+</body>
+</html>

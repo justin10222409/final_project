@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gallery • Disc Golf Guide</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <img src="images/favicon.ico" alt="Disc Golf icon" />
+        <span>Disc Golf Guide</span>
+      </a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="gallery.html" class="active">Gallery</a>
+        <a href="blog.html">Tips</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Gallery</h1>
+    <div class="grid-3" style="margin-top:1rem;">
+      <figure class="img-wrap"><img src="images/hyzer_release.jpg" alt="Hyzer release"><figcaption style="padding:.5rem;">Hyzer Release</figcaption></figure>
+      <figure class="img-wrap"><img src="images/anhyzer_release.jpg" alt="Putting"><figcaption style="padding:.5rem;">Anhyzer Release</figcaption></figure>
+      <figure class="img-wrap"><img src="images/dg_course.jpg" alt="Course"><figcaption style="padding:.5rem;">Sceneries from courses</figcaption></figure>
+      <figure class="img-wrap"><img src="images/bag_setup.jpg" alt="Bag setup"><figcaption style="padding:.5rem;">Bag essentials: putter, mid, driver</figcaption></figure>
+      <figure class="img-wrap"><img src="images/forehand.jpg" alt="Forehand"><figcaption style="padding:.5rem;">Forehand</figcaption></figure>
+      <figure class="img-wrap"><img src="images/parked.jpg" alt="Basket"><figcaption style="padding:.5rem;">Sweet chains—parked!</figcaption></figure>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© <span id="year"></span> Disc Golf Guide — Justin Manis.</p>
+    </div>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tips • Disc Golf Guide</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <img src="images/favicon.ico" alt="Disc Golf icon" />
+        <span>Disc Golf Guide</span>
+      </a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="blog.html" class="active">Tips</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Tips &amp; Resources</h1>
+    <p>Technique checklists, form cues, and links for further learning.</p>
+
+    <article class="card">
+      <h2>Backhand Fundamentals</h2>
+      <ul class="check">
+        <li>Stand tall, relaxed grip—build from a one-step</li>
+        <li>Reach-back on a straight line; keep the disc close to chest</li>
+        <li>Shift from behind: plant foot braces, hips lead the shoulders</li>
+        <li>Finish balanced; don’t over-rotate your head off target</li>
+      </ul>
+    </article>
+
+    <article class="card" style="margin-top:1rem;">
+      <h2>Forehand (Sidearm) Keys</h2>
+      <ul class="check">
+        <li>Palm to the sky on follow-through to avoid excessive roll</li>
+        <li>Use stable/overstable discs while learning</li>
+        <li>Short, snappy motion—let the wrist do work</li>
+      </ul>
+    </article>
+
+    <article class="card" style="margin-top:1rem;">
+      <h2>Useful Reads</h2>
+      <p><a href="https://www.pdga.com/rules/official-rules-disc-golf" target="_blank" rel="noopener">Official Rules (PDGA)</a></p>
+      <p><a href="https://www.pdga.com/introduction" target="_blank" rel="noopener">Intro to Disc Golf (PDGA)</a></p>
+    </article>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© <span id="year"></span> Disc Golf Guide — Justin Manis.</p>
+    </div>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  </footer>
+</body>
+</html>
